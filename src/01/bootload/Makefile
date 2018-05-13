@@ -15,7 +15,7 @@ STRIP  	= $(BINDIR)/$(ADDNAME)strip
 
 H8WRITE = /OS12step/PackageFiles/src/kz_h8write
 
-H8WRITE_SERDEV = /dev/ttyS0
+H8WRITE_SERDEV = /dev/ttyUSB0
 
 OBJS  = vector.o startup.o main.o
 OBJS += lib.o serial.o
@@ -53,7 +53,7 @@ $(TARGET).mot : $(TARGET)
 image :			$(TARGET).mot
 
 write :			$(TARGET).mot
-				$(H8WRITE) -3069 -f20 $(TARGET).mot $(H8H8WRITE_SERDEV)
+				$(H8WRITE) -3069 -f20 $(TARGET).mot $(H8WRITE_SERDEV)
 
 clean :
 				rm -f $(OBJS) $(TARGET) $(TARGET).elf $(TARGET).mot

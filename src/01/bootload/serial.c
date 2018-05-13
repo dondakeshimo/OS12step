@@ -50,8 +50,8 @@ static struct {
     volatile struct h8_3069f_sci *sci;
 } regs[SERIAL_SCI_NUM] = {
     { H8_3069F_SCI0 },
-    { H8_3069F_SCI0 },
-    { H8_3069F_SCI0 },
+    { H8_3069F_SCI1 },
+    { H8_3069F_SCI2 },
 };
 
 /* デバイス初期化 */
