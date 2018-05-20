@@ -88,7 +88,7 @@ int puts(unsigned char *str)
     return 0;
 }
 
-int putxval(unsigned long value, int cokumn)
+int putxval(unsigned long value, int column)
 {
     char buf[9];
     char *p;
