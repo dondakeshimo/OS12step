@@ -16,6 +16,10 @@ case $1 in
         $WORKDIR/tools/kz_h8write -3069 -f20 $WORKDIR/src/$2/kzload.mot $USBDEV
         ;;
 
+    xmodem)
+        $WORKDIR/tools/kz_xmodem kozos $USBDEV
+        ;;
+
     clean)
         docker run -i -v=$WORKDIR:/work -w=/work/src/$2 os12step make clean
         ;;
