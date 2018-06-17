@@ -51,5 +51,5 @@ SECTIONS
 
         .stack : {
                 _stack = .;
-        }
+        } > stack
 }
