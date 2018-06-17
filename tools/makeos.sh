@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WORKDIR="$HOME/src/github.com/dondakeshimo/OS12step"
+WORKDIR="$HOME/Scripts/src/github.com/dondakeshimo/OS12step"
 USBDEV="/dev/tty.usbserial-FT1Y6SYF"
 
 case $1 in
