@@ -17,7 +17,7 @@ case $1 in
         ;;
 
     xmodem)
-        $WORKDIR/tools/kz_xmodem kozos $USBDEV
+        $WORKDIR/tools/kz_xmodem $WORKDIR/src/$2 $USBDEV
         ;;
 
     clean)
