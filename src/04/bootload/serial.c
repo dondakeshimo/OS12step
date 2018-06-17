@@ -106,7 +106,7 @@ unsigned char serial_recv_byte(int index)
     while (!serial_is_recv_enable(index))
         ;
     c = sci->rdr;
-    sci->ssr &= ~H8H8_3069F_SCI_SSR_RDRF; /* 受信完了 */
+    sci->ssr &= ~H8_3069F_SCI_SSR_RDRF; /* 受信完了 */
 
     return c;
 }

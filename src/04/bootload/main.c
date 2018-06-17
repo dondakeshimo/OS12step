@@ -26,8 +26,8 @@ static int dump(char * buf, long size)
 {
     long i;
 
-    if (seze < 0) {
-        puts("no data.\n")
+    if (size < 0) {
+        puts("no data.\n");
         return -1;
     }
     for (i = 0; i < size; i++) {
