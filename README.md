@@ -15,7 +15,7 @@
 
 ## 使い方
 
-1.   `src/01/bootload` などに書籍のコードを記入
+1.   `src/01/bootload` などに書籍のコードを記入
 2.   `./tools/makeos.sh make 01/bootload` を実行
 3.   `./tools/makeos.sh image 01/bootload` を実行
 4.   `./tools/makeos.sh write 01/bootload` を実行
