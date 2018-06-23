@@ -36,7 +36,7 @@ struct elf_program_header {
     long memory_size;
     long flags;
     long align;
-}
+};
 
 /* ELFヘッダのチェック */
 static int elf_check(struct elf_header *header)
